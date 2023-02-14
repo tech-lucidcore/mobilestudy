@@ -1,21 +1,18 @@
 목표 : Swift와 Kotlin의 기본문법을 이해하고 Native앱을 작성해 본다.
 
 2/8  : 주제분장
-2/15 : 기본개발환경 설명 (XCode, Android Studio, git, eClipse-서버연동용)
-       git설정
-2/22 : iOS Layout(UIKit) / Android Layout(android control widget)
-       화면 레이아웃 설명
-3/8 : Swift기본문법
-3/15 : Hybrid App 방식 및 동작원리
-3/22 : UIKit / ViewController / NavigationController / Swift UI
-3/29 : Push기본원리 / eClipse로 테스트용 서버작성 및 설정
-4/5  : Kotlin기본문법 
-4/12 : HTTP통신 (iOS Http통신 / Android Http통신) / Android
-4/19 : Android Control Widget / Activity / Framement
-4/26 : Socket / WebSocket (iOS통신 / Android통신)
-5/3  : JetPack Compose
-       개발하고자 하는 앱의 요건 정의
-5/10 : Android앱작성 - 설명 및 질문답변
-5/17 : Android앱작성 - 설명 및 질문답변
-5/24 : iOS앱작성 - 설명 및 질문답변
-5/31 : iOS앱작성 - 설명 및 질문답변
+2/15 : 기본개발환경 설명 (XCode, Android Studio, Git, Eclipse) - Push원리 설명
+2/22 : iOS UIKit / Android Control Widget / Layout구성 설명
+3/8  : Hybrid App종류 및 원리설명
+3/15 : Swift기본문법
+3/22 : Kotlin기본문법 
+3/29 : Http통신
+4/5  : Socket통신
+4/12 : WebSocket통신
+4/19 : Swift UI
+4/26 : JetPack Compose
+5/3  : 개발하고자 하는 앱의 요건 정의 / eclipse를 이용해서 테스트용 서버 작성
+5/10 : Android앱작성 - 설명 및 QnA
+5/17 : Android앱작성 - 설명 및 QnA
+5/24 : iOS앱작성 - 설명 및 QnA
+5/31 : iOS앱작성 - 설명 및 QnA
