@@ -29,4 +29,8 @@
     <servlet-name>JerseyRESTApplication</servlet-name>
     <url-pattern>/svc/*</url-pattern>
   </servlet-mapping>
+  
+  <listener>
+    <listener-class>kr.testuser.realtest.RealTesterListener</listener-class>
+  </listener>
 </web-app>
