@@ -26,10 +26,11 @@ public class RealTestServlet {
 	@Path("/fire")
 	public Response testFunction(@Context HttpServletRequest request,
 								 @QueryParam("sleep") long sleep,
-								 @QueryParam("count") long count) {
+								 @QueryParam("count") long count,
+								 @QueryParam("postfix") String postfix) {
 		long current = 0;
 		try {
-			List<byte[]> list = loadDataFromLogFile();
+			List<byte[]> list = loadDataFromLogFile("RealTest_" + postfix + ".log");
 			if (list != null) {
 				while(true) {
 					for (int ii=0; ii<list.size(); ii++) {
@@ -44,7 +45,7 @@ public class RealTestServlet {
 						break;
 					}
 				}
-				return getResponse(Status.OK, "OK!!!");
+				return getResponse(Status.OK, "OK!!!" + current);
 			}
 			return getResponse(Status.OK, "LOAD FILE ERROR!!!");
 		} catch (Exception e) {
@@ -53,10 +54,10 @@ public class RealTestServlet {
 		}
 	}
 	
-	protected List<byte[]> loadDataFromLogFile() {
+	protected List<byte[]> loadDataFromLogFile(String fileName) {
 		List<byte[]> ret = new ArrayList<>();
 		try {
-			InputStream is = Resources.getResourceAsStream("RealTest.log");
+			InputStream is = Resources.getResourceAsStream(fileName);
 			byte[] lenData = new byte[4];
 			int read;
 			while (true) {

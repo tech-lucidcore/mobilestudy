@@ -42,6 +42,7 @@ public class RealTester {
 					Socket socket = listener.accept();
 					RTSocketHolder holder = new RTSocketHolder(socket);
 					holder.start();
+System.out.println("RTAcceptor accepted!!!");
 					__holderList.add(holder);
 				}
 				listener.close();
@@ -127,7 +128,7 @@ public class RealTester {
 		public WriteThread(RTSocketHolder holder, OutputStream os) {
 			__holder = new WeakReference<RTSocketHolder>(holder);
 			__os = os;
-			dataQueue = new ArrayBlockingQueue<>(1000);
+			dataQueue = new ArrayBlockingQueue<>(10000);
 		}
 		
 		public void pushData(byte[] aData) {
